@@ -62,9 +62,25 @@
     <div class="buttons">
         <button class="delete">Delete</button>
         <button class="print">Print</button>
+        
     </div>
+
+    <!--New Butoon Added (Return to home)-->
+    <div class="return-home">
+    <button class="backtohome" onclick="clearAndGoHome()">Return to Home</button>
+    </div>
+
+    
+
     <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
     <script src="arrange.js"></script>
     
+    <script>
+    function clearAndGoHome() {
+        localStorage.removeItem('selectedcat');
+        window.location.href = "home.html";
+    }
+</script>
+
 </body>
 </html>

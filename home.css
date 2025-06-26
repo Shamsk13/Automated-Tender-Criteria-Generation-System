@@ -94,7 +94,7 @@ ul{
     margin: 30px auto;
 }
 
-li{
+/*li{
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -102,7 +102,20 @@ li{
     justify-content: space-between;
     border: 0.5px solid gray;
     box-shadow: 4px 4px 10px lightgray ;
+}*/
+
+li {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 5px auto;
+    justify-content: space-between;
+    border: 0.5px solid gray;
+    box-shadow: 4px 4px 10px lightgray;
+    background-color: white; /* Add default background */
+    transition: background-color 0.3s ease; /* Smooth color change */
 }
+
 
 li p{
     width: 80%;
